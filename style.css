@@ -1,0 +1,253 @@
+
+body{
+	min-width:300px;
+	background-color:#222;
+	font-size:12pt;
+	overflow-x:hidden;
+}
+.container{
+	min-width:300px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:bold;
+}
+@media(min-width:300px){
+	.navigation-container{
+		position:fixed;
+		width:100%;
+		z-index:12;
+		top:0;
+		left:0;
+	}
+	.movie-container{
+		position:relative;
+		margin-bottom:50px;
+		display:inline-block;
+		float:none;
+		
+	}
+	.content-container{
+		color:white;
+		position:relative;
+		margin-top:200px;
+	}
+	.movie{
+		position:relative;
+		background-color:#3d1255;
+		border-radius:10px;
+		color:white;
+		padding-bottom:10px;
+	}
+	.poster-container{
+		position:relative;
+	}
+	.poster-container img{
+		width:100%;
+		position:absolute;
+		left:0;
+		top:-20px;
+	}
+	.movie-info{
+		position:relative;
+		margin-bottom:10px;
+	}
+	.rating{
+		float:left;
+		padding:2px;
+		border:1px solid white;
+		min-width:30px;
+		text-align:center;
+		vertical-align:top;
+	}
+	.year{
+		float:right;
+		vertical-align:top;
+	}
+	.movie-info .year{
+		float:left;
+	}
+	.more-info-button{
+		width:100%;
+		border-radius:10px;
+		border:2px solid white;
+		padding:10px;
+		text-align:center;
+		color:white;
+		background-color:#764b8e;
+		margin-top:20px;
+	}
+	.movie-title{
+		font-size:1.1em;
+		
+	}
+	
+	.movie-more-info{
+		background-color:#3d1255;
+		border-radius:10px;
+		color:white;
+		position:relative;
+		padding-bottom:20px;
+		position:absolute;
+		left:0;
+		margin:0 auto;
+		width:100%;
+		
+		
+	}
+	.movie-more-info .poster-container{
+		position:absolute;
+		left:0;
+		top:0;
+		overflow:hidden;
+	}
+	.movie-more-info .poster-container img{
+		top:-30%;
+	}
+	.summary{
+		position:relative;
+		margin-top:20px;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	.summary p{
+		margin-top:10px;
+		text-align:justify;
+	}
+	.genre{
+		margin-top:10px;
+	}
+	.back{
+		display:block;
+		float:left;
+		margin-top:10px;
+	}
+	.back:hover{
+		cursor:pointer;
+		
+	}
+	.backArrow{
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 5px 8.7px 5px 0;
+		border-color: transparent #ffffff transparent transparent;
+		margin-right:5px;
+		display:inline-block;
+		vertical-align:middle;
+
+	}
+	.info-container{
+		position:relative;
+		top:0;
+		z-index:10;
+	}
+	.logo{
+		background : url('img/cinema_search_logo_glass_only_white.svg') no-repeat 0 0;
+		height:60px;
+		padding:0;
+		margin:0;
+		float:left;
+		background-size:contain;
+	}
+	.navigation-container{
+		padding-top:20px;
+		padding-bottom:20px;
+		background-color:#3d1255;
+	}
+	.search-form{
+		font-size:0;
+		padding:0;
+	}
+	.search-form input{
+		padding:2% 2% 6px 2%;
+		font-size:1.4em;
+		background-color:inherit;
+		border-color:inherit inherit #764b8e inherit;
+		border:none;
+		border-bottom:3px solid #764b8e;
+		color:white;
+		box-sizing:border-box;
+		font-size:16pt;
+		width:78%;
+		margin-right:2%;
+		display:inline-block;
+		text-align:left;
+		
+	}
+	.search-form input:focus{
+		outline:none;
+	}
+	.search-form button:focus{
+		outline:none;
+	}
+	.search-form button{
+		background : url('img/search-button.svg') no-repeat center;
+		padding:5%;
+		width:5%;
+		max-width:150px;
+		border-radius:100%;
+		background-size:contain;
+		background-color:#764b8e;
+		border:8px solid #764b8e;
+		display:inline-block;
+		vertical-align:bottom;
+		
+	}
+
+	.overlay{
+		position:fixed;
+		left:0;
+		top:0;
+		z-index:9;
+		width:100%;
+		height:100%;
+		background-color:rgba(0,0,0,.3);
+		display:none;
+	}
+	.load-more-button{
+		border:none;
+		border-radius:10px;
+		text-align:center;
+		width:200px;
+		padding:10px;
+		color:white;
+		background-color:#764b8e;
+		border:2px solid white;
+		margin:0 auto;
+		display:block;
+		margin-top:10px;
+	}
+	.message{
+		font-size:1.3em;
+		color:white;
+		text-align:center;
+	}
+}
+@media(min-width:550px){
+	.search-form button{
+		width:40px;
+		padding:0;
+		height:40px;
+	}
+	.search-form{
+		text-align:right;
+	}
+}
+
+@media (min-width:768px){
+	.movie-more-info .poster-container{
+		position:relative;
+		overflow:visible;
+	}
+	.movie-more-info .poster-container img{
+		top:0;
+		position:relative;
+	}
+	.summary{
+		margin-top:0;
+	}
+	.logo{
+		background : url('img/cinema_search_logo_white.svg') no-repeat 0 0;
+		background-size:contain;
+	}
+}
