@@ -92,7 +92,6 @@ $('.search-form').on('submit',function(e){
 	}).done(function(data){
 		
 		movieController.totalPages = Math.ceil(parseInt(data.totalResults)/10);
-		alert(movieController.currentPage);
 		if(movieController.currentPage < movieController.totalPages && data.Response !== 'False'){
 			movieController.addLoadMore();
 		}
